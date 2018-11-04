@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import '_normalize';
+@import '_base';
+
+@font-face {
+  font-family: 'runwild';
+  src:url(runwild.ttf);
+}
+
+%font-shared{font-family: 'Maven Pro';}
+
+h2, h4, h5, p {@extend %font-shared;}
+h1, h3, h6 {font-family: 'runwild';}
+
+.cover{
+  /* how do i get rid of awk space on top of the pic */
+  background-image: url("../img/cover.jpg");
+  /*height: 100%;
+  width: 100%;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*.paw{
+    background-image: url("../img/paw.png");
+    height: 20px;
+    width: 20px;
+    padding-left: 150px;
+}*/
+
+$black: #000000;
+$white: #ffffff;
+$grey: #484848;
+
+h1{
+  text-align: left;
+  padding-left: 4.4rem;
+  font-size: 14rem;
+  color:$black;
+  padding-top: 30rem;
+  font-family: 'runwild';
+  margin-top: -.5rem;
+}
+
+h2{
+  text-align: left;
+  padding-left: 4.4rem;
+  padding-bottom: 33rem;
+  font-size: 4.5rem;
+  color: $black;
+  font-family: 'Maven Pro';
+}
+
+h3{
+  font-size: 7rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 4rem;
+  text-align: center;
+}
+
+h5{
+  font-size: 3rem;
+  text-align: center;
+  color: $grey;
+}
+
+h6{
+  text-align: center;
+  font-size: 7rem;
+  color: $white;
+}
+
+p{
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.about{
+  padding-top: 3.13rem;
+  padding-bottom: 4.4rem;
+}
+
+.dog{
+  margin-top: 1.9rem;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.paw{
+width: 10rem;
+  display: block;
+margin: 0 auto;
+}
+
+.events{
+padding-top: 1.9rem;
+}
+
+section.highlights{
+  margin-top: 5rem;
+  margin-bottom: 1.93rem;
+  display: flex;
+  justify-content: center;
+  /*how to put club highlights on top of the pic? */
+}
+
+.social{
+  width:12.53rem;
+  height:10rem;
+  justify-content: center;
+padding-left: 3.133rem;
+margin-left: 11rem;
+align-items: center;
+  font-size: 0;
+  /*how to put icon in center? */
+}
+.contact{
+  padding-top: 5rem;
+  background-image: url("../img/husky.jpg");
+  height: 60rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
